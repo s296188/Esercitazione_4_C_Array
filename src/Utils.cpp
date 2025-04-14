@@ -19,7 +19,7 @@ bool ImportData(const string& filename, double& S, int& n, double*& w, double*& 
     getline(file, line);
     n = stoi(line.substr(line.find(';') + 1));
 
-    getline(file, line); // skip the header line "w;r"
+    getline(file, line); // saltare "w;r"
 
     w = new double[n];
     r = new double[n];
